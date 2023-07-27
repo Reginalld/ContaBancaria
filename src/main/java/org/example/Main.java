@@ -36,7 +36,7 @@ public class Main {
 
                     case 1: {
                         contaBancaria.resgate();
-                        System.out.println(contaBancaria.getSaldoInicial());
+                        System.out.println("Dinheiro atual: " +contaBancaria.getSaldoInicial());
                         break;
                     }
 

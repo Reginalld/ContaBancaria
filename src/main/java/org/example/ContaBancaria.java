@@ -20,13 +20,15 @@ public class ContaBancaria {
         Scanner scanner = new Scanner(System.in);
         ContaBancaria contaBancaria = new ContaBancaria();
 
+        System.out.println("Insira o valor que deseja sacar");
+        valorSacar = (scanner.nextFloat());
+
         if(valorSacar > saldoInicial){
             System.out.println("Você não tem esse dinheiro");
 
         } else {
 
-            System.out.println("Insira o valor que deseja sacar");
-            valorSacar = (scanner.nextFloat());
+            System.out.println("Valor sacado com sucesso");
             saldoInicial -= valorSacar;
         }
 
